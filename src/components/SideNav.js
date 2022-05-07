@@ -11,7 +11,7 @@ import 'react-pro-sidebar/dist/css/styles.css';
 import '../components/sideNav.css';
 import {AiFillDashboard,AiFillSetting} from 'react-icons/ai';
 import {BsFillHandThumbsUpFill,BsFillPeopleFill} from 'react-icons/bs';
-import {MdInventory2,MdSettings} from 'react-icons/md'
+import {MdInventory2,MdSettings} from 'react-icons/md';
 import {FcSalesPerformance} from 'react-icons/fc';
 import {IoMdAnalytics} from 'react-icons/io';
 import {GrSettingsOption} from 'react-icons/gr';
