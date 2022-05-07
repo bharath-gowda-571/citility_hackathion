@@ -4,20 +4,15 @@
 .main-container{
   display: flex;
   flex-direction: row;
-  
 }
 
 .grid-container{
   padding: 20px;
   display: grid;
   background-color: #e6e8ec;
-  
   width: 100%;
-  
-  
   grid-template-columns: repeat(3,1fr);
   gap: 25px;
-  /* grid-auto-rows: minmax(100px, 300px); */
 }
 
 
@@ -67,7 +62,35 @@
 .grid-container>div{
   background-color: #ffffff;
   padding: 20px;
+  
+  
+}
+.numbers-div{
+  /* padding: 20px; */
+  /* padding: 30px ; */
+  padding-top: 100px !important;
+  padding-bottom:100px !important;
   justify-content: center;
+  background-color: #ffffff;
+  display: flex;
+  
+}
+.div-heading{
+  font-weight: 600;
+  font-size: x-large;
+  color: #616161;
+  
+}
+.dash-heading{
+  margin: 0;
+  background-color: #ffffff;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  color: #616161;
+  padding-left:20px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -75,5 +98,20 @@
     display: flex;
     flex-direction: column;
 
+  }
+  .numbers-div{
+    padding: 0;
+  }
+  .num-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: black solid 1px;
+    background-color: #ffffff;
+    box-shadow: 0.5px 0.5px 10px;
+    width: 250px;
+    
   }
 }

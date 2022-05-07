@@ -50,7 +50,7 @@ export default function RevenueGraph(){
                                   
       return (
         <div>
-        <h1>Revenue Graph</h1>
+        <h1 className="div-heading">Revenue Graph</h1>
         <ResponsiveContainer  height={300}>
               
             <AreaChart data={data}
