@@ -1,7 +1,5 @@
 .sideBar{
-    /* height: 100vh; */
-    height: auto;
-    
+    height: 100vh;
 }
 
 .menus{
@@ -10,9 +8,13 @@
 
 .BrandName{
     margin : 0.5rem;
-    margin-top:2rem;
     display: flex;
     flex-direction: row;
+}
+
+.companyName{
+    margin-top: 2px;
+    margin-right: 3px;
 }
 
 .pro-sidebar.collapsed {
