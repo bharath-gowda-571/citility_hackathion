@@ -25,7 +25,7 @@ export default function TaskReport(){
               
             <BarChart  data={data} >
                 <CartesianGrid />
-                <XAxis dataKey="name" />
+                <XAxis dataKey="name"  />
                 <YAxis />
                 <Tooltip />
                 <Legend />

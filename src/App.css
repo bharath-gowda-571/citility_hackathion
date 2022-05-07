@@ -128,4 +128,8 @@
     color: #616161;
     padding-left:20px;
   }
+  .number-card-div{
+    display: flex;
+    flex-direction: column;
+  }
 }

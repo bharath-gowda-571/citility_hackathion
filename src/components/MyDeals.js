@@ -38,6 +38,7 @@ export default function MyDeals(){
                 dataKey="value"
                 data={data}
                 isAnimationActive
+                animationDuration={0.5}
                 >
                 <LabelList  fill="#000" position="right" stroke="none" dataKey="value" formatter={(data)=>{
                   return("$"+data)
