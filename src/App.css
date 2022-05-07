@@ -92,10 +92,32 @@
   color: #616161;
   padding-left:20px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   
 }
-
+.num-card:nth-child(2),.num-card:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: black solid 1px;
+  background-color: #cfd3ff;
+  box-shadow: 0.5px 0.5px 10px;
+  width: 250px;
+}
+.num-card:nth-child(1),.num-card:nth-child(4){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: black solid 1px;
+  background-color: #65d589;
+  box-shadow: 0.5px 0.5px 10px;
+  width: 250px;
+  
+}
 @media only screen and (max-width: 1000px) {
   .grid-container{
     display: flex;
@@ -105,6 +127,8 @@
   .numbers-div{
     padding: 0;
   }
+
+
   .num-card{
     display: flex;
     flex-direction: column;
