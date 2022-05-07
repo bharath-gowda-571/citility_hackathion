@@ -42,7 +42,6 @@ export default function MyDeals(){
                 <LabelList  fill="#000" position="right" stroke="none" dataKey="value" formatter={(data)=>{
                   return("$"+data)
                 }} />
-                <Legend />
                 </Funnel>
             </FunnelChart>
             </ResponsiveContainer>
