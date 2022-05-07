@@ -40,7 +40,7 @@ export default function MyDeals(){
                 isAnimationActive
                 animationDuration={0.5}
                 >
-                <LabelList  fill="#000" position="right" stroke="none" dataKey="value" formatter={(data)=>{
+                <LabelList  fill="#000"  stroke="none" dataKey="value" formatter={(data)=>{
                   return("$"+data)
                 }} />
                 </Funnel>
