@@ -38,7 +38,6 @@ export default function SideNav(){
                
                 
                 <SubMenu title="Customers" icon={<BsFillPeopleFill/>}> 
-                <BsFillPeopleFill/>
                     <MenuItem>Contacts</MenuItem>
                     <MenuItem>Company</MenuItem>
                     <MenuItem>Contacts Center</MenuItem>
