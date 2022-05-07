@@ -1,5 +1,6 @@
 .sideBar{
     height: auto;
+    /* min-width: 20px; */
 }
 
 .menus{
@@ -19,7 +20,7 @@
 
 .pro-sidebar.collapsed {
     width: 5rem;
-    min-width: 10px;
+    min-width: 30px;
 }
 .toggle{
     margin-left: auto;
