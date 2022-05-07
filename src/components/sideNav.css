@@ -9,3 +9,8 @@
 .BrandName{
     margin : 1rem;
 }
+
+.pro-sidebar.collapsed {
+    width: 5rem;
+    min-width: 10px;
+}

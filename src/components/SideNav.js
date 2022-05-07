@@ -5,19 +5,29 @@
 //         something
 //     </div>)
 // }
+import { useState } from 'react';
 import { ProSidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import '../components/sideNav.css';
 
 export default function SideNav(){
+    const [collBool, setCheck] = useState(false);
+    function some_fun() {
+        setCheck(collBool => {
+           return !collBool
+    })
+    }
+
+    // setCheck(collBool => !collBool)
+
    return (
-       <>
            
-            <ProSidebar className='sideBar'>
+        <ProSidebar className='sideBar' collapsed={collBool}>
             
             <div className='BrandName'>
                 CRM
             </div>
+            <button onClick={some_fun}>button</button>
 
             <Menu className='menus' iconShape="square">
                
@@ -61,8 +71,7 @@ export default function SideNav(){
             </Menu>
 
             
-            </ProSidebar>
-        </>
+        </ProSidebar>
        ) 
        
 }
