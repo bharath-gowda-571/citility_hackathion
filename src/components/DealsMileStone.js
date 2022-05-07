@@ -1,57 +1,43 @@
 import React from "react"
-import { Pie,PieChart,ResponsiveContainer } from "recharts"
+import { Legend, Pie,PieChart,ResponsiveContainer } from "recharts"
 
 export default function DealsMileStone(){
-    const data01 = [
-        {
-          "name": "Group A",
-          "value": 400
-        },
-        {
-          "name": "Group B",
-          "value": 300
-        },
-        {
-          "name": "Group C",
-          "value": 300
-        },
-        {
-          "name": "Group D",
-          "value": 200
-        },
-        {
-          "name": "Group E",
-          "value": 278
-        },
-        {
-          "name": "Group F",
-          "value": 189
-        }
-      ];
+    
       const data02 = [
         {
-          "name": "Group A",
-          "value": 2400
+          "name": "Won",
+          "value": 0,
+          "fill": "#a4de6c"
         },
         {
-          "name": "Group B",
-          "value": 4567
+          "name": "New",
+          "value": 14,
+          "fill": "#82ca9d"
         },
         {
-          "name": "Group C",
-          "value": 1398
+          "name": "Demo Scheduled",
+          "value": 32,
+          "fill": "#8dd1e1"
         },
         {
-          "name": "Group D",
-          "value": 9800
+          "name": "Demo Completed",
+          "value": 32,
+          "fill": "#a4de6c"
         },
         {
-          "name": "Group E",
-          "value": 3908
+          "name": "Demo No Show",
+          "value": 0,
+          "fill":"purple"
         },
         {
-          "name": "Group F",
-          "value": 4800
+          "name": "Intersted",
+          "value": 54,
+          "fill":"red"
+        },
+        {
+          "name": "Abandoned",
+          "value": 0,
+          "fill":"lightblue"
         }
       ];
           
@@ -64,8 +50,9 @@ export default function DealsMileStone(){
             
             <ResponsiveContainer height={300}  >
                 <PieChart>
-                    <Pie data={data01} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-                    <Pie data={data02} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+                    <Pie data={data02} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#fff" label />
+                    <Legend></Legend>
+                    
                 </PieChart>   
             </ResponsiveContainer>
         </div>
