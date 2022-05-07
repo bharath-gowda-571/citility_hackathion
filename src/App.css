@@ -114,4 +114,15 @@
     width: 250px;
     
   }
+  .dash-heading{
+    margin: 0;
+    padding-top:20px;
+    padding-bottom: 20px;;
+    background-color: #ffffff;
+    
+    display: flex;
+    align-items: center;
+    color: #616161;
+    padding-left:20px;
+  }
 }

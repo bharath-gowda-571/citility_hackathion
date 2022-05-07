@@ -1,32 +1,28 @@
 import React from "react"
-import { Tooltip,FunnelChart,Funnel,LabelList,ResponsiveContainer } from "recharts"
+import { Tooltip,FunnelChart,Funnel,LabelList,ResponsiveContainer, Legend } from "recharts"
 
 export default function MyDeals(){
     const data = [
+      {
+        "value": 0,
+        "name": "Demo Scheduled",
+        "fill": "#83a6ed"
+      },
         {
-          "value": 100,
-          "name": "展现",
+          "value": 500,
+          "name": "New",
           "fill": "#8884d8"
         },
+        
         {
-          "value": 80,
-          "name": "点击",
-          "fill": "#83a6ed"
-        },
-        {
-          "value": 50,
-          "name": "访问",
+          "value": 1200,
+          "name": "Demo Completed",
           "fill": "#8dd1e1"
         },
         {
-          "value": 40,
-          "name": "咨询",
+          "value": 1200,
+          "name": "Interested",
           "fill": "#82ca9d"
-        },
-        {
-          "value": 26,
-          "name": "订单",
-          "fill": "#a4de6c"
         }
       ]
       
@@ -43,7 +39,10 @@ export default function MyDeals(){
                 data={data}
                 isAnimationActive
                 >
-                <LabelList position="right" fill="#000" stroke="none" dataKey="name" />
+                <LabelList  fill="#000" position="right" stroke="none" dataKey="value" formatter={(data)=>{
+                  return("$"+data)
+                }} />
+                <Legend />
                 </Funnel>
             </FunnelChart>
             </ResponsiveContainer>
