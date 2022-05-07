@@ -1,10 +1,4 @@
-// import React from "react"
 
-// export default function SideNav(){
-//     return (<div>
-//         something
-//     </div>)
-// }
 import { useState } from 'react';
 import { ProSidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
@@ -14,7 +8,8 @@ import {BsFillHandThumbsUpFill,BsFillPeopleFill} from 'react-icons/bs';
 import {MdInventory2,MdSettings} from 'react-icons/md';
 import {FcSalesPerformance} from 'react-icons/fc';
 import {IoMdAnalytics} from 'react-icons/io';
-import {GrSettingsOption} from 'react-icons/gr';
+import {TiThMenuOutline} from 'react-icons/ti';
+
 export default function SideNav(){
     const [collBool, setCheck] = useState(false);
     function some_fun() {
