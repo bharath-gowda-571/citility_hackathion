@@ -9,7 +9,12 @@ import { useState } from 'react';
 import { ProSidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import '../components/sideNav.css';
-
+import {AiFillDashboard,AiFillSetting} from 'react-icons/ai';
+import {BsFillHandThumbsUpFill,BsFillPeopleFill} from 'react-icons/bs';
+import {MdInventory2,MdSettings} from 'react-icons/md'
+import {FcSalesPerformance} from 'react-icons/fc';
+import {IoMdAnalytics} from 'react-icons/io';
+import {GrSettingsOption} from 'react-icons/gr';
 export default function SideNav(){
     const [collBool, setCheck] = useState(false);
     function some_fun() {
@@ -32,26 +37,27 @@ export default function SideNav(){
             <Menu className='menus' iconShape="square">
                
 
-                <MenuItem >Dashboard</MenuItem>
+                <MenuItem icon={<AiFillDashboard/>} > Dashboard</MenuItem>
                 
-                <MenuItem >Deals</MenuItem>
+                <MenuItem icon={<BsFillHandThumbsUpFill/>} >  Deals</MenuItem>
                
-                <MenuItem >Inventory</MenuItem>
+                <MenuItem icon={ <MdInventory2/>}> Inventory</MenuItem>
                
                 
-                <SubMenu title="Customers" >
+                <SubMenu title="Customers" icon={<BsFillPeopleFill/>}> 
+                <BsFillPeopleFill/>
                     <MenuItem>Contacts</MenuItem>
                     <MenuItem>Company</MenuItem>
                     <MenuItem>Contacts Center</MenuItem>
                 </SubMenu>
 
-                <SubMenu title="Sales" >
+                <SubMenu title="Sales" icon= {<FcSalesPerformance/>}>
                     <MenuItem>Invoice</MenuItem>
                     <MenuItem>Quotes</MenuItem>
                     <MenuItem>Sales Center</MenuItem>
                 </SubMenu>
 
-                <SubMenu title="Analytics" >
+                <SubMenu title="Analytics" icon={<IoMdAnalytics/>}>
                     <MenuItem>Sales Funnel</MenuItem>
                     <MenuItem>Employee performance</MenuItem>
                     <MenuItem>Call Analytics</MenuItem>
@@ -60,7 +66,7 @@ export default function SideNav(){
                     <MenuItem>Report Vizard</MenuItem>
                 </SubMenu>
 
-                <SubMenu title="Settings" >
+                <SubMenu title="Settings" icon={<MdSettings/>} >
                     <MenuItem>CRM Settings</MenuItem>
                     <MenuItem>My Company Details</MenuItem>
                     <MenuItem>Access Permissions</MenuItem>
