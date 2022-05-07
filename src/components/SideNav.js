@@ -7,14 +7,21 @@
 // }
 import { ProSidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
+import '../components/sideNav.css';
 
 export default function SideNav(){
    return (
        <>
            
-            <ProSidebar>
+            <ProSidebar className='sideBar'>
             
-            <Menu iconShape="square">
+            <div className='BrandName'>
+                CRM
+            </div>
+
+            <Menu className='menus' iconShape="square">
+               
+
                 <MenuItem >Dashboard</MenuItem>
                 
                 <MenuItem >Deals</MenuItem>
