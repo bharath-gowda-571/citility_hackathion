@@ -2,6 +2,7 @@
 import './App.css';
 import MainArea from './components/MainArea';
 import SideNav from './components/SideNav';
+
 function App() {
   const something=<div>somehthing</div>
   console.log(something)
