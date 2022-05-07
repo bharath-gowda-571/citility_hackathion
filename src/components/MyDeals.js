@@ -34,7 +34,7 @@ export default function MyDeals(){
       
     return(
         <div>
-            <h1>My Deals Funnel</h1>
+            <h1 className="div-heading">My Deals Funnel</h1>
             <ResponsiveContainer height={300}>
             <FunnelChart >
                 <Tooltip />

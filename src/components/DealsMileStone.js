@@ -60,7 +60,7 @@ export default function DealsMileStone(){
         
     return(
         <div>
-            <h1>My Deals By MileStone</h1>
+            <h1 className="div-heading">My Deals By MileStone</h1>
             
             <ResponsiveContainer height={300}  >
                 <PieChart>

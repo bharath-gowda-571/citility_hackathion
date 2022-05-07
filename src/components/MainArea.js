@@ -17,22 +17,31 @@ export default function MainArea(props){
                                   
           
     return (
-        <div className="grid-container">
-            <NumberCards/>
-            <div>
-              <MyDeals></MyDeals>
-            </div>
-            <div>
-              <DealsMileStone></DealsMileStone>
-            </div>
-            <div className="rev-graph">
-              <RevenueGraph > </RevenueGraph>
-            </div>
-            <div>
-            <TaskReport></TaskReport>
+      
+          
+          <div className="grid-container">
+              <h1 className="dash-heading">
+                Dashboard
+              </h1>
+              <div className="numbers-div">
+                <NumberCards/>
+              </div>
+              <div>
+                <MyDeals></MyDeals>
+              </div>
+              <div>
+                <DealsMileStone></DealsMileStone>
+              </div>
+              <div className="rev-graph">
+                <RevenueGraph > </RevenueGraph>
+              </div>
+              <div>
+              <TaskReport></TaskReport>
 
-            </div>
-            
-      </div> 
+              </div>
+              
+        </div> 
+      
+      
     )
 }
