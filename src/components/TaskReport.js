@@ -5,13 +5,13 @@ import { BarChart,Legend,Bar,XAxis,YAxis,CartesianGrid,Tooltip,ResponsiveContain
     
 export default function TaskReport(){
     const data = [
-        { name: "A", x: 30, y: 70 },
-        { name: "B", x: 12, y: 88 },
-        { name: "C", x: 15, y: 85 },
-        { name: "D", x: 35, y: 65 },
-        { name: "E", x: 54, y: 46 },
-        { name: "F", x: 72, y: 28 },
-        { name: "G", x: 32, y: 68 }
+        { name: "Mar", x: 30, y: 70 },
+        { name: "Apr", x: 12, y: 88 },
+        { name: "May", x: 15, y: 85 },
+        { name: "Jun", x: 35, y: 65 },
+        { name: "Jul", x: 54, y: 46 },
+        { name: "Aug", x: 72, y: 28 },
+        { name: "Sep", x: 32, y: 68 },
     ];
   
     
@@ -19,7 +19,7 @@ export default function TaskReport(){
                                   
       return (
         <div>
-        <h1 className="div-heading">Revenue Graph</h1>
+        <h1 className="div-heading">Task Report</h1>
         
         <ResponsiveContainer height={300}>
               
