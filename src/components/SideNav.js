@@ -24,7 +24,7 @@ export default function SideNav(){
         <ProSidebar className='sideBar' collapsed={collBool}>
             
             <div className='BrandName '>
-                <div> CRM </div> <div onClick={some_fun} className="toggle">{collBool?<TiThMenuOutline/>: <ImCross/>}</div>
+                <div className='companyName'> CRM </div> <div onClick={some_fun} className="toggle">{collBool?<TiThMenuOutline/>: <ImCross/>}</div>
             </div>
 
             <Menu className='menus' iconShape="square">
