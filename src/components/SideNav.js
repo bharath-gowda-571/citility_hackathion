@@ -12,7 +12,7 @@ import {TiThMenuOutline} from 'react-icons/ti';
 import {ImCross} from 'react-icons/im';
 
 export default function SideNav(){
-    const [collBool, setCheck] = useState(false);
+    const [collBool, setCheck] = useState(true);
     function some_fun() {
         setCheck(collBool => {
            return !collBool
