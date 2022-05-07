@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import MainArea from './components/MainArea';
 import SideNav from './components/SideNav';
