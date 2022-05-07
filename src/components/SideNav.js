@@ -19,7 +19,7 @@ export default function SideNav(){
                 
                 <MenuItem >Deals</MenuItem>
                
-                <MenuItem >Inventry</MenuItem>
+                <MenuItem >Inventory</MenuItem>
                
                 
                 <SubMenu title="Customers" >
