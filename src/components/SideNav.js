@@ -9,6 +9,7 @@ import {MdInventory2,MdSettings} from 'react-icons/md';
 import {FcSalesPerformance} from 'react-icons/fc';
 import {IoMdAnalytics} from 'react-icons/io';
 import {TiThMenuOutline} from 'react-icons/ti';
+import {ImCross} from 'react-icons/im';
 
 export default function SideNav(){
     const [collBool, setCheck] = useState(false);
@@ -18,16 +19,13 @@ export default function SideNav(){
     })
     }
 
-    // setCheck(collBool => !collBool)
-
    return (
            
         <ProSidebar className='sideBar' collapsed={collBool}>
             
-            <div className='BrandName'>
-                CRM
+            <div className='BrandName '>
+                <div> CRM </div> <div onClick={some_fun} className="toggle">{collBool?<TiThMenuOutline/>: <ImCross/>}</div>
             </div>
-            <button onClick={some_fun}>button</button>
 
             <Menu className='menus' iconShape="square">
                

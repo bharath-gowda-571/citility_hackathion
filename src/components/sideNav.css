@@ -7,10 +7,20 @@
 }
 
 .BrandName{
-    margin : 1rem;
+    margin : 0.5rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .pro-sidebar.collapsed {
     width: 5rem;
     min-width: 10px;
+}
+.toggle{
+    margin-left: auto;
+    padding:3px;
+    padding-bottom: 1px;
+    border: 1px solid white;
+    border-radius: 4px;
+
 }
