@@ -1,5 +1,6 @@
 .sideBar{
     height: auto;
+    
 }
 
 .menus{
@@ -28,4 +29,14 @@
     border: 1px solid white;
     border-radius: 4px;
 
+}
+
+@media only screen and (max-width: 1000px){
+    .pro-sidebar.collapsed {
+        width: 5rem;
+        min-width: 20px;
+    }
+    .BrandName{
+        flex-direction: column;
+    }
 }
